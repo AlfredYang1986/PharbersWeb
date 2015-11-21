@@ -1,0 +1,18 @@
+@(title: String)(include: Html)(content: Html)(script: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/pharbers_icon.png")">
+        
+		@include
+    </head>
+    <body>
+        @content
+        
+        @script
+    </body>
+</html>

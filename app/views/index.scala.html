@@ -1,0 +1,337 @@
+@(message: String)
+
+@main(message) {
+	
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="@routes.Assets.at("stylesheets/index.css")">
+} {
+
+	<!-- nav bar -->
+	<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <!-- 
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            --> 
+          </button>
+          <a class="navbar-brand" href="#">
+         	<img src='@routes.Assets.at("images/pharbers_logo.png")' />
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse" style="min-width: 600px;">
+          <ul class="nav navbar-nav" >
+            <li class="nav-li-ver-a"><a id="ap1" ><b>Offerings<br>业务板块</b></a></li>
+            <li class="nav-li-ver-a"><a id="ap2" ><b>Technology<br>技术优势</b></a></li>
+            <li class="nav-li-ver-a"><a id="ap3" ><b>About<br>关于</b></a></li>
+	        <li class="nav-li-ver-btn right" > 
+	        	<button type="button" class="btn nav-ver-btn nav-expert login-func">Login 登陆</button>
+            	<!--  <button type="button" class="btn-link nav-contact-link btn">Contact Us<br>联系我们</button>--> 
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+    </nav>
+    
+    <div class="" style="margin-top: 100px; height: auto;">
+    	<div id="sp0" >
+			<img id="sp0-img" class="carousel" src='@routes.Assets.at("images/pharbers_title_img.png")' />
+			
+			<!-- page one footer -->
+		    <div>
+		    	<table id="page-footer" width="100%" border="0" cellspacing="0" cellpadding="2" bordercolor="#009900" style="cursor: pointer">
+					<tr><td><p class="menu-more">探索更多</p></td></tr>
+					<tr><td><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></td></tr>
+				</table>
+		    </div>
+    	</div>	
+	    
+	    <!-- page two container -->
+	     <div  id="sp1" >
+	    	<table id="sp1-table" class="table-content" width="1000px" border="0" cellspacing="0" cellpadding="2" bordercolor="#009900" >
+				<!--  <tr><td class="table-content-title" colspan="4" >我们能为你做什么</td></tr>--> 
+				<tr><td class="table-content-title" colspan="4" style="font-size: 30px">我们能为你做什么<br><p class="table-content-sub-title" >What we do</p></td></tr>
+				<tr>
+					<td class="table-content-cell" >
+						<img src='@routes.Assets.at("images/pharbers_service_info.png")' style="width: 100%; height: 100%" />
+					</td>
+					<td class="table-content-cell-text table-content-cell-text-left" valign="top" width="250px">
+						<p><span style="font-size: 24px">咨询:</span><br>以数据为依据的<br>医药市场咨询服务,<br>帮助客户洞察发展趋势、<br>评估和布局市场、<br>制定和优化销售策略等.<br></p>
+					</td>
+					<td class="table-content-cell">
+						<img class="table-content-cell-img" src='@routes.Assets.at("images/pharbers_product_info.png")' style="width: 100%; height: 100%" />
+					</td>
+					<td class="table-content-cell-text table-content-cell-text-right" valign="top" width="250px">
+						<p><span style="font-size: 24px">MAX:</span><br>市场销售分析工具,<br>通过整合内外部数据<br>进行逻辑运算和统计放大,<br>自动生成市场监测报告<br>并进行智能分析的工具.<br></p>
+					</td>
+				</tr>
+			
+				<tr>
+					<td class="table-content-title-text" colspan="2">服务 Service</td>
+					<td class="table-content-title-text" colspan="2">产品 Product</td>
+				</tr>			
+				
+				<tr>
+					<td class="table-content-text" colspan="2" valign="top">
+						<!--  
+						<p>
+							Management Consulting:<br>
+							Data-based <br>
+							Pharmaceutical Marketing Consulting Services <br>
+							Insight into trends / <br>
+							Assess the market situation and layout / <br>
+							Develop ales strategy optimization <br>
+							more ... <br>
+						</p>
+						-->
+						<p>
+							Management Consulting:<br>
+							Evidenced consulting service is helping <br>
+							our clients successfully make strategic decision,<br>
+							optimize sales & marketing plan <br>
+							and evaluate return.
+						</p>
+					</td>
+					<td class="table-content-text" colspan="2" valign="top">
+						<!--  
+						<p>
+							Product Product <br>
+							MAX: <br>
+							Marketing analysis tools <br>
+							Internal and external data integration / <br>
+							Logical and statistical zoom / <br>
+							Market monitoring report / intelligent analysis	<br>
+							more ... <br>
+						</p>
+						-->
+						<p>
+							MAX: <br>
+							It provides the solution to<br>
+							integrate variant data, <br>
+							generate market measurements <br>
+							and offer analytic interatcion.
+						</p>
+					</td>
+				</tr>	
+			</table>
+	    </div>
+	
+		<!-- page three container -->
+		<div  id="sp2">
+	    	<table class="table-content" width="80%" margin="10%" border="0" cellspacing="0" cellpadding="2" bordercolor="#009900">
+				<tr><td class="table-content-title-2" colspan="4" style="font-size: 30px">以技术优势为驱动，<b>洞察先机</b><br><p class="table-content-sub-title" >Technique Advantages</p></td></tr>
+				<tr>
+
+					<td class="table-content-cell" colspan="4">
+						<img src='@routes.Assets.at("images/pharbers_tech_info.png")' style="width: 100%/*; height: 100%*/" />
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="table-content-text-2" width="25%">
+						<p class="table-content-text-title" >先进的统计模型<br> </p>
+						<p class="table-content-text-normal">Innovative statistical method<br>to analyze data</p>
+						<p class="table-content-text-footer">用户痛点的需求解释<br>的需求解释<br>解释</p>
+					</td>
+					<td class="table-content-text-2" width="25%">
+						<p class="table-content-text-title" >SaaS平台<br> </p>
+						<p class="table-content-text-normal">SaaS capable<br></p>
+						<p class="table-content-text-footer">用户痛点的需求解释<br>的需求解释<br>解释</p>
+					</td>
+					<td class="table-content-text-2" width="25%">
+						<p class="table-content-text-title" >全球领先的敏捷式<br>商业智能平台</p>
+						<p class="table-content-text-normal">Global leading business<br>intelligence platform</p>
+						<p class="table-content-text-footer">用户痛点的需求解释<br>的需求解释<br>解释</p>
+					</td>
+					<td class="table-content-text-2" width="25%">
+						<p class="table-content-text-title" >多源数据的整合<br> </p>
+						<p class="table-content-text-normal">Seamless integration with<br>existing data</p>
+						<p class="table-content-text-footer">用户痛点的需求解释<br>的需求解释<br>解释</p>
+					</td>
+				</tr>	
+			</table>
+	    </div>
+	    
+	    <!-- footer -->
+	    <div id="sp3">
+			<img class="footer-img" src='@routes.Assets.at("images/pharbers_ps_img.png")' />
+			<div class="footer-container">
+				<table class="table-content" width="81%" margin="11%" border="0" cellspacing="0" cellpadding="2" bordercolor="#009900" >
+					<tr>
+						<td colspan="1" width="15%" style="line-height: 40px">
+							<p class="footer-table-title" ><img src='@routes.Assets.at("images/pharbers_ps_title.png")' /> </p>
+						</td>
+						<td colspan="4" style="line-height: 40px">
+							<p class="footer-table-title" >| 合作伙伴 </p>
+						</td>
+					</tr>	
+					
+					<tr>
+						<td valign="top" width="15%">
+						</td>
+	
+						<td valign="top">
+							<p class="footer-table-normal" >阿斯利康公司<br>安斯泰来制药（中国）有限公司<br>北京泰德制药股份有限公司<br>费森尤斯卡比（中国）<br>美国赛生药业公司<br>诺和诺德中国制药有限公司<br>诺华制药有限公司<br>雀巢健康科学（中国）有限公司</p>
+						</td>			
+						
+						<td valign="top">
+							<p class="footer-table-normal" >北京大学<br>北京大学首钢学院<br>北京大学医学部<br>南方医药经济研究所<br>农工民主党<br>中国科学院生物物理研究所<br>中国医药设备杂志<br>中华医学会医学工程学分会</p>
+						</td>			
+						
+						<td valign="top">
+							<p class="footer-table-normal" >北京嘉林药业股份有限公司<br>国药集团<br>南京先声药业<br>青岛国海生物制药有限公司<br>天士力集团<br>中信投资控股有限公司</p>
+						</td>		
+	 
+	 					<td valign="top">
+							<p class="footer-table-normal" >瑞士爱可泰隆医药技术公司<br>Truven Health Analytics<br>卫材（中国）药业有限公司<br>西安杨森制药有限公司</p>
+						</td>		
+					</tr>
+					
+					<tr><td colspan="5"><span style="COLOR: #0000ff"><hr align="center" width="100%" color="#986cb9" size="1"></span></td></tr>
+			
+					<tr>
+						<td valign="top" width="15%">
+							<p class="footer-table-title-2" > 联系我们</p>
+						</td>
+	
+						<td valign="top" colspan="4">
+							<span class="glyphicon glyphicon-envelope footer-table-normal-n" aria-hidden="true">  xyz@@xyz.com</span>
+							<span class="glyphicon glyphicon-map-marker footer-table-normal-n" aria-hidden="true"> 霄云路36号，国航大厦1501，100027</span>
+							<span class="glyphicon glyphicon-earphone footer-table-normal-n" aria-hidden="true"> (86) 13800138000</span>
+						</td>			
+					</tr>		
+				
+					<tr><td colspan="5"><span style="COLOR: #0000ff"><hr align="center" width="100%" color="#986cb9" size="1"></span></td></tr>
+				
+					<tr>
+						<td valign="top" align="middle" colspan="5">
+							<p class="footer-table-normal-n" style="font-size: 12px">2015 Pharbers Fund Inc. 版权所有。隐私政策 | 使用条款</p>
+						</td>			
+					</tr>
+					
+					<tr>
+						<td class="footer-table-placeholder" colspan="5" ></td>
+					</tr>
+					
+				</table>
+			</div>
+	    </div>
+	</div>
+
+	<!-- scroll btn -->
+	<div class="scroll-btn-container">
+		<button class="scroll-btn btn" id="page-0"></button>
+		<button class="scroll-btn btn" id="page-1"></button>
+		<button class="scroll-btn btn" id="page-2"></button>	
+		<button class="scroll-btn btn" id="page-3"></button>	
+	</div>
+
+	<!-- login btn -->
+    <button id="login-btn" class="btn login-btn login-func"><b>Login</b><br>进入您的<br>数据中心</button>
+    <img style="position: absolute; z-index: 99;" id="pharbers-title-logo" src='@routes.Assets.at("images/pharbers_title_logo.png")' />
+} {
+
+	<script type="text/javascript">
+		function setup() {
+			//var container_width = $('#nav > div.container').width();
+			var width = $(window).width();
+			var page_height = $(window).height();
+			//$(".scroll-btn-container").css({"position": "fixed", "top": "330px", "left": (width - container_width) / 2 + container_width * 0.9});
+			$(".scroll-btn-container").css({"position": "fixed", "top": page_height / 2 - 30 - $("div.scroll-btn-container").height() / 2, "left": width * 0.95});
+			$("#page-0").addClass("scroll-btn-active");
+
+			$("#sp0").css({"height":page_height - 100});
+			$("#sp1").css({"height":page_height});
+			$("#sp2").css({"height":page_height});
+
+			$("#sp0-img").css({"height":page_height - 200});
+			$("#login-btn").css({"top": page_height - 250, 
+				"left": width / 2 - $("#login-btn").width() / 2 - 25 / 2
+				//"width": page_height * 0.12,
+				//"height": page_height * 0.12
+				});	
+			$("#pharbers-title-logo").css({"top": page_height * 0.08 + 100, 
+				"left": width / 2 - page_height * 0.15,
+				"width": page_height * 0.3,
+				"height": page_height * 0.3
+				});	
+
+			$("#sp1-table").css({"margin-left": (width - 1000) / 2});
+		};
+	
+		$(function(){
+			setup();
+		});
+
+		$(window).resize(function() {
+			setup();
+		});
+
+		$("#login-btn").hover(function(){
+			$(this).css({"background-image": "url(/assets/images/pharbers_login_btn_bg.gif)"});
+		},function(){
+			$(this).css({"background-image": "url(/assets/images/pharbers_login_layer_bg.png)"});
+		});
+
+		$("#page-0").click(function(){
+			$("html,body").animate({scrollTop:$("#sp0").offset().top - 100}, 500);
+		});
+
+		$("#page-1").click(function(){
+			$("html,body").animate({scrollTop:$("#sp1").offset().top - 100}, 500);
+		});
+
+		$("#ap1").click(function(){
+			$("html,body").animate({scrollTop:$("#sp1").offset().top - 100}, 500);
+		});
+
+		$("#page-2").click(function(){
+			$("html,body").animate({scrollTop:$("#sp2").offset().top - 100}, 500);
+		});
+
+		$("#ap2").click(function(){
+			$("html,body").animate({scrollTop:$("#sp2").offset().top - 100}, 500);
+		});
+
+		$("#page-3").click(function(){
+			$("html,body").animate({scrollTop:$("#sp3").offset().top - 100}, 500);
+		});
+
+		$("#ap3").click(function(){
+			$("html,body").animate({scrollTop:$("#sp3").offset().top - 100}, 500);
+		});
+		
+		$(window).scroll(function () {
+			if ($(window).scrollTop() < $("#sp1").offset().top - 100) {
+				$(".scroll-btn").removeClass("scroll-btn-active");
+				$("#page-0").addClass("scroll-btn-active");
+
+			} else if (($(window).scrollTop() >= $("#sp1").offset().top - 100) && $(window).scrollTop() < $("#sp2").offset().top - 100) {
+				$(".scroll-btn").removeClass("scroll-btn-active");
+				$("#page-1").addClass("scroll-btn-active");
+
+			} else if ($(window).scrollTop() >= $("#sp2").offset().top - 100 && $(window).scrollTop() < $("#sp3").offset().top - 100) { 
+				$(".scroll-btn").removeClass("scroll-btn-active");
+				$("#page-2").addClass("scroll-btn-active");
+				
+			} else if ($(window).scrollTop() >= $("#sp3").offset().top - 100) { 
+				$(".scroll-btn").removeClass("scroll-btn-active");
+				$("#page-3").addClass("scroll-btn-active");
+
+			}
+		});
+
+		$(".login-func").click(function(){
+			location.href = "http://58.67.147.219/SpotfireWeb";
+		});
+
+		$("#page-footer").click(function(){
+			$("html,body").animate({scrollTop:$("#sp1").offset().top - 100}, 500);
+		});
+	</script>
+}
