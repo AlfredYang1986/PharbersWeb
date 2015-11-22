@@ -9,8 +9,22 @@
 
 /* #nav > div.container { */
 
+@font-face{
+	font-style:normal;
+	font-family:'App-ST';
+	src:url('/assets/font/STHeiti-Light.ttc') format('truetype');
+}
+
+/*
+@font-face{
+	font-style:normal;
+	font-family:'App-ST-M';
+	src:url('/assets/font/STHeitiSCMedium.ttc') format('truetype');
+}
+*/
+
 * {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "App-ST", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #nav {
@@ -86,10 +100,15 @@
 .nav-li-ver-a {
 	line-height: 70px;
 	/* margin-right: 10px; */
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
+	font-family: App-ST;
 	-ms-text-size-adjust: 100%;
   	-webkit-text-size-adjust: 100%;
 	font-size: 14px;
+}
+
+.nav-li-ver-a:hover {
+	font-weight: bold;
 }
 
 .nav-li-ver-btn {
@@ -168,7 +187,8 @@ td.table-content-title {
 	
 	/*color: #1a428a;*/
 	color: #0091df;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
+	font-family: App-ST;
 	font-weight: blod;
 	font-size: 40px;
 	padding-bottom: 40px;
@@ -179,15 +199,17 @@ td.table-content-title-2 {
 	text-align: center;
 	
 	color: #0091df;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
+	font-family: App-ST;
 	font-weight: blod;
 	font-size: 40px;
 	padding-top: 50px;
 }
 
 .table-content-sub-title {
-	font-family: monospace, monospace; /*sans-serif;*/
-	font-size: 18px;
+	/*font-family: monospace, monospace; /*sans-serif;*/
+	font-family: App-ST;
+	font-size: 20px;
 	color: #636466;
 }
 
@@ -200,8 +222,9 @@ td.table-content-cell {
 
 .table-content-cell-text {
 	text-align: left;
-	font-family: sans-serif;
-	font-size: 19px;
+	/*font-family: sans-serif;*/
+	font-family: App-ST;
+	font-size: 18px;
 	font-weight: blod;
 	
 	color: white;
@@ -228,10 +251,9 @@ td.table-content-text {
 
 td.table-content-title-text {
 	padding-left: 30px;
-	padding-top: 8px;
-	padding-bottom: 30px
+	padding-top: 28px;
 	text-align: left;
-	font-size: 30px;
+	font-size: 22px;
 	color: #009bdf;	
 }
 
@@ -242,23 +264,25 @@ td.table-content-text-2 {
 p.table-content-text-title {
 	font-size: 22px;
 	color: #0780d0;
-	font-family: SimSun;
+	/*font-family: SimSun;*/
+	font-family: App-ST;
 	text-align: center;
-	min-height: 50px;
+	line-height: 50px;
 }
 
 p.table-content-text-normal {
-	font-size: 14px;
+	font-size: 16px;
 	color: #636466;
 	text-align: center;
+	line-height: 18px;
 }
 
 p.table-content-text-footer {
-	font-size: 12px;
+	font-size: 14px;
 	color: #636466;
 	text-align: center;
 	margin-top: 20px;
-	min-height: 30px;
+	line-height: 15px;
 }
 
 /* FOOT CONTENT
@@ -279,13 +303,15 @@ p.table-content-text-footer {
 	margin-top: 15px;
 	color: white;
 	font-size: 18px;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
+	font-family: App-ST;
 }
 
 .footer-table-title-2 {
 	color: white;
 	font-size: 15px;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
+	font-family: App-ST;
 }
 
 .footer-table-normal-n {
@@ -303,7 +329,8 @@ p.table-content-text-footer {
 	margin-left: 10px;
 	font-size: 14px;
 	line-height: 25px;
-	font-family: SimSum;
+	/*font-family: sans-serif;*/
+	font-family: App-ST;
 }
 
 .footer-table-placeholder {
@@ -327,10 +354,13 @@ p.table-content-text-footer {
 	padding: 25px;
 	color: white;
 	font-size: 12px;
-	font-family: "sans-serif";
+	/*font-family: sans-serif;*/
+	font-family: App-ST;
 	
 	min-width: 110px;
 	min-height: 110px;
+	
+	border: none;
 }
 
 .login-btn:hover {
@@ -382,22 +412,35 @@ p.table-content-text-footer {
 ------------------------------------------------- */
 
 .menu-more {
-	font-family:"sans-serif";
+	/*font-family: sans-serif;*/
+	font-family: App-ST;
 	font-size: 14px;
 }
 
 #title-slogen {
-	font-family:"sans-serif";
-	font-size: 30px;
-	color: gray;
+	/*font-family: sans-serif;*/
+	font-family: App-ST-M;
+	font-size: 32px;
+	color: #585961;
 	width: 100%;
 	text-align: center;	
 }
 
 #ps-slogen {
-	font-family:"sans-serif";
-	font-size: 20px;
-	color: gray;
+	/*font-family: sans-serif;*/
+	font-family: App-ST-M;
+	font-size: 24px;
+	color: #585961;
 	width: 100%;
 	text-align: center;	
+}
+
+.left-quote {
+	background-image: url(/assets/images/pharbers_left_quote.png);
+	min-width: 10px;
+}
+
+.right-quote {
+	background-image: url(/assets/images/pharbers_right_quote.png);
+	min-width: 10px;
 }
