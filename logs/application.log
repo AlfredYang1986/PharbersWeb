@@ -1,7 +1,7 @@
-2015-11-17 12:04:00,021 - [INFO] - from play in pool-6-thread-1 
+2015-11-22 08:55:21,969 - [INFO] - from play in pool-11-thread-5 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-11-17 12:04:12,341 - [ERROR] - from net.sf.ehcache.Cache in play-internal-execution-context-1 
+2015-11-22 09:13:06,302 - [ERROR] - from net.sf.ehcache.Cache in play-internal-execution-context-1 
 Unable to set localhost. This prevents creation of a GUID. Cause was: bogon: bogon: nodename nor servname provided, or not known
 java.net.UnknownHostException: bogon: bogon: nodename nor servname provided, or not known
 	at java.net.InetAddress.getLocalHost(InetAddress.java:1466) ~[na:1.7.0_25]
@@ -50,6 +50,63 @@ Caused by: java.net.UnknownHostException: bogon: nodename nor servname provided,
 	at java.net.InetAddress.getLocalHost(InetAddress.java:1462) ~[na:1.7.0_25]
 	... 38 common frames omitted
 
-2015-11-17 12:04:12,417 - [INFO] - from play in play-internal-execution-context-1 
+2015-11-22 09:13:06,372 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-11-22 09:14:54,974 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2015-11-22 09:17:19,067 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2015-11-22 09:21:26,007 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2015-11-22 09:28:18,728 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2015-11-22 09:31:33,869 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2015-11-22 09:33:50,844 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2015-11-22 09:34:49,106 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2015-11-22 09:35:56,347 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-11-22 09:40:04,613 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-11-22 09:40:36,101 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-11-22 09:40:49,167 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-11-22 09:42:43,325 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-11-22 09:43:38,669 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-11-22 09:44:41,305 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-11-22 09:48:22,210 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-11-22 09:49:18,519 - [INFO] - from play in play-internal-execution-context-6 
+Application started (Dev)
+
+2015-11-22 09:52:18,045 - [INFO] - from play in play-internal-execution-context-6 
+Application started (Dev)
+
+2015-11-22 09:52:41,079 - [INFO] - from play in play-internal-execution-context-6 
+Application started (Dev)
+
+2015-11-22 09:53:37,587 - [INFO] - from play in play-internal-execution-context-6 
 Application started (Dev)
 
