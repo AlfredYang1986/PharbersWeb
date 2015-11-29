@@ -472,3 +472,7 @@ p.table-content-text-footer {
 .en-font {
 	font-family: App-San !important;
 }
+
+.quote-img {
+	height: 35%;
+}
