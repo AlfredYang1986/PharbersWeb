@@ -9,14 +9,34 @@
 
 /* #nav > div.container { */
 
-@font-face{
-	font-style:normal;
-	font-family:'App-ST';
-	src:url('/assets/font/STHeiti-Light.ttc') format('truetype');
+@font-face{ 
+	font-family: 'App-ST';
+	src: url('/assets/font/pingfang_light-webFont.eot');
+	src: url('/assets/font/pingfang_light-webFont.eot?#iefix') format('embedded-opentype'),
+	     url('/assets/font/pingfang_light-webFont.woff') format('woff'),
+	     url('/assets/font/pingfang_light-webFont.ttf') format('truetype'),
+	     url('/assets/font/pingfang_light-webFont.svg#webfont') format('svg');
+
+	font-weight: normal;    
+    font-style: normal; 
 }
+
+@font-face{ 
+	font-family: 'App-San';
+	src: url('/assets/font/sanfranciscodisplay-light-webfont.eot');
+	src: url('/assets/font/sanfranciscodisplay-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('/assets/font/sanfranciscodisplay-light-webfont.woff') format('woff'),
+	     url('/assets/font/sanfranciscodisplay-light-webfont.ttf') format('truetype'),
+	     url('/assets/font/sanfranciscodisplay-light-webfont.svg#webfont') format('svg');
+
+	font-weight: normal;    
+    font-style: normal; 
+}
+
 
 /*
 @font-face{
+    font-style:normal; 
 	font-style:normal;
 	font-family:'App-ST-M';
 	src:url('/assets/font/STHeitiSCMedium.ttc') format('truetype');
@@ -24,7 +44,10 @@
 */
 
 * {
-	font-family: "App-ST", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*
+	font-family: "App-ST", "App-San," "Helvetica Neue", Helvetica, Arial, sans-serif;
+	*/
+	font-family: "App-ST", "App-San,";
 }
 
 #nav {
@@ -161,6 +184,7 @@
   height: 500px;
   background-color: #777;
 }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -443,4 +467,8 @@ p.table-content-text-footer {
 .right-quote {
 	background-image: url(/assets/images/pharbers_right_quote.png);
 	min-width: 10px;
+}
+
+.en-font {
+	font-family: App-San !important;
 }
