@@ -1,11 +1,17 @@
-name := "web_frame"
+name := """PharbersWeb"""
 
-version := "1.0-SNAPSHOT"
+version := "1.0"
+
+organization := "com.pharbers"
+
+lazy val root = (project in file(".")).enablePlugins(PlayScala)
+
+scalaVersion := "2.11.8"
 
 libraryDependencies ++= Seq(
   jdbc,
-  anorm,
-  cache
-)     
+  cache,
+  ws,
+  "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test
+)
 
-play.Project.playScalaSettings
